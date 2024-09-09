@@ -1,0 +1,18 @@
+.top-nav {
+  background: var(--blue-90);
+  padding: 0.8rem;
+
+  & .container {
+    justify-content: end;
+  }
+}
+.top-nav :is(.container, .contact-summary, .top-nav-group) {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.top-nav :is(.btns, .login, .number, .address, .timing) {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}

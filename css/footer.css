@@ -1,0 +1,113 @@
+footer {
+  padding: 18rem 0 2rem;
+  /* background: linear-gradient(to right, #112155, #2f4385, #112155); */
+  background: #042d89;
+}
+
+footer .top-footer {
+  padding: 0 8% 0;
+  display: grid;
+  margin-bottom: 3.2rem;
+  place-items: top left;
+  gap: 2rem;
+}
+
+.top-footer :is(.about, .popular-courses, .pages, .contact) h4 {
+  color: var(--white-color);
+  text-align: start;
+  margin-bottom: 2.4rem;
+}
+
+.top-footer .popular-courses .course {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2rem;
+  padding: 0 1.2rem 1.6rem;
+}
+
+.top-footer .popular-courses .course .course-image {
+  width: 8rem;
+  height: 6rem;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.top-footer .popular-courses .course .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  & h5 {
+    text-align: start;
+    color: var(--white-color);
+    font-size: 1.2rem;
+  }
+  & p {
+    color: var(--gray-100);
+  }
+}
+
+.top-footer .pages ul {
+  list-style: disc;
+  flex-direction: column;
+}
+
+.top-footer .contact .contact-block {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.top-footer .contact .contact-block .fa-solid {
+  color: var(--blue-100);
+  font-size: 2rem;
+}
+
+.top-footer .contact .contact-block span a {
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+
+  &:hover {
+    color: rgb(4, 4, 87);
+  }
+}
+
+footer .bottom-footer {
+  padding: 3.2rem 8% 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.bottom-footer p {
+  text-align: center;
+  font-size: 1.6rem;
+}
+.bottom-footer p a {
+  font-size: 1.6rem;
+  text-decoration: underline;
+  transition: all 0.3s linear;
+
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+
+  &:hover {
+    color: rgb(4, 4, 87);
+  }
+}
+.bottom-footer .social-icons {
+  align-self: self-end;
+}
+
+.bottom-footer .social-icons ul li a {
+  font-size: 1.6rem;
+}

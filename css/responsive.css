@@ -1,0 +1,353 @@
+@media (width >= 1280px) {
+  .top-nav .container {
+    width: 80%;
+  }
+  .hero-section .container {
+    width: 90%;
+    justify-content: end;
+  }
+  .courses .container .card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .courses .container .course-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+  }
+
+  .pricing {
+    height: 70rem;
+  }
+}
+
+@media (width <= 1280px) {
+  .top-nav .container {
+    width: 90%;
+  }
+  .top-nav .contact-summary {
+    gap: 0.8rem;
+  }
+  .hero-section nav .container {
+    width: 100%;
+  }
+  .hero-section nav ul {
+    gap: 1.2rem;
+  }
+
+  .courses .container .card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .courses .container {
+    width: 80%;
+  }
+  .courses .container .course-grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2rem;
+  }
+
+  .pricing {
+    height: 75rem;
+  }
+
+  .internship .subject .header .title h3 {
+    width: 100%;
+  }
+
+  footer .bottom-footer {
+    border-top: 0.1rem solid var(--gray-10);
+  }
+}
+
+@media (width <= 1080px) {
+  .top-nav .container {
+    width: 95%;
+  }
+  .top-nav .container {
+    flex-direction: column;
+    width: 95%;
+  }
+  .top-nav .contact-summary {
+    order: 2;
+  }
+  .top-nav .top-nav-group {
+    justify-content: end;
+    width: 100%;
+  }
+}
+
+@media (width >= 992px) {
+  footer .top-footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (width <= 992px) {
+  .top-nav .container :is(.contact-summary, .top-nav-group) {
+    justify-content: end;
+    width: 100%;
+    margin-right: 6.4rem;
+  }
+
+  .hero-section {
+    background-size: 100% 100%;
+  }
+
+  .hero-section nav {
+    background-color: #fff;
+    padding: 2.4rem 1.2rem;
+  }
+
+  .hero-section .logo {
+    & .white-logo {
+      display: none;
+    }
+
+    & .blue-logo {
+      display: inline-block;
+    }
+  }
+
+  .hero-section .container :is(.menu, .btns) {
+    display: none;
+  }
+
+  .navbar .menu-btn .fa-bars {
+    display: inline-block;
+    color: var(--blue-100);
+  }
+
+  .hero-section .body .container {
+    & .text-1 :is(.fundamentals, .not-typed),
+    .input-box,
+    .text-3,
+    .ezi-links {
+      display: none;
+    }
+
+    & .text-2 span {
+      display: inline-block;
+      font-size: 2.8rem;
+      font-weight: 700;
+      text-align: end;
+    }
+
+    & .text-1 {
+      order: 2;
+      margin: 0 7.2rem 24rem 0;
+    }
+
+    & .text-1 span {
+      display: inline-block;
+      top: 0;
+      left: 8rem;
+      white-space: nowrap;
+      margin-left: -25rem;
+    }
+  }
+
+  .courses .container {
+    width: 90%;
+  }
+
+  .courses .container .course-grid {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 0;
+  }
+
+  footer .top-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width >= 780px) {
+  .pricing .pricing-grid .table:not(:hover, .data) {
+    height: 38rem;
+  }
+
+  .pricing .pricing-grid .table:not(:hover)::before {
+    background: rgba(150, 149, 149, 0.05);
+    height: 7rem;
+    width: 98%;
+    left: 1.3rem;
+    bottom: 4.4rem;
+  }
+
+  .pricing .pricing-grid .table:not(:hover)::after {
+    width: 50%;
+    left: 1.3rem;
+    bottom: 0.8rem;
+    font-size: 6rem;
+    color: rgba(150, 148, 148, 0.483);
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+
+  .analysis button {
+    display: none;
+  }
+}
+
+@media (width <= 780px) {
+  .top-nav .container .contact-summary {
+    flex-wrap: wrap;
+    gap: 0.2rem 0.4rem;
+  }
+  .top-nav :is(.number, .address, .timing) {
+    display: flex;
+    align-items: center;
+  }
+  .hero-section {
+    background-size: 100% 80%;
+  }
+  .pricing .pricing-grid .table .data .row .image {
+    display: none;
+  }
+  .pricing .pricing-grid .table:not(:hover) .data {
+    height: 38rem;
+  }
+  .courses .container .card {
+    grid-template-columns: 1fr;
+  }
+  .pricing {
+    height: 80rem;
+  }
+
+  .learning .text p {
+    display: none;
+  }
+
+  .learning .text .mobile-app-links {
+    margin-top: 2.4rem;
+  }
+
+  .internship .header {
+    flex-direction: column-reverse;
+  }
+
+  .internship .subject .header .title :is(h3, p) {
+    text-align: center;
+  }
+
+  .analysis .analysis-image {
+    display: none;
+  }
+
+  .analysis button {
+    display: block;
+    margin: 16rem 0 16rem !important;
+  }
+
+  .bottom-footer .social-icons {
+    align-self: self-start !important;
+  }
+}
+
+@media (width <= 600px) {
+  .pricing {
+    height: 135rem;
+  }
+
+  footer .top-footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (width <= 480px) {
+  .hero-section {
+    background-size: 100% 100%;
+  }
+
+  .hero-section .body .container {
+    & .text-2 span {
+      text-align: center;
+      font-size: clamp(1.8rem, 1vw, 2.4rem);
+    }
+
+    & .text-1 span {
+      display: inline-block;
+      margin-top: -2rem;
+      left: 18rem;
+      /* top: 0; */
+    }
+
+    & .text-1 #changing-text {
+      font-size: clamp(1.8rem, 1vw, 2.4rem);
+    }
+
+    & .text-3 {
+      display: inline-block;
+      order: 3;
+      margin-top: -25rem;
+      gap: 1.2rem;
+      & p {
+        display: inline-block;
+      }
+
+      & :is(p, span) {
+        font-size: clamp(0.8rem, 0.8vw, 1.8rem);
+      }
+    }
+
+    & .ezi-links {
+      display: inline-block;
+      order: 4;
+    }
+
+    & .ezi-links ul {
+      & .eziblogs img {
+        width: 7.9rem;
+        height: 1.8rem;
+      }
+
+      & .ezipos img {
+        width: 7.6rem;
+        height: 1.1rem;
+        margin-left: 2.2rem;
+      }
+
+      & .ezicoding img {
+        width: 10.2rem;
+        height: 5rem;
+        margin-bottom: 0.7rem;
+        margin-left: 0.7rem;
+      }
+    }
+  }
+
+  .courses .container {
+    width: 95%;
+  }
+
+  .courses .container .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing {
+    height: 140rem;
+  }
+
+  .learning .parallax-image {
+    display: none !important;
+  }
+
+  .learning .text {
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .learning .text h2 {
+    text-align: center !important;
+  }
+
+  .learning .text .mobile-app-links {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}

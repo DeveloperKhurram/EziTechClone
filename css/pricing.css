@@ -1,0 +1,122 @@
+.pricing {
+  margin: 0 10%;
+  padding: 3.2rem 0;
+}
+.pricing .heading p {
+  color: var(--black-color);
+  text-align: center;
+  margin: 2.4rem 0;
+}
+
+.pricing .pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22.8rem, 1fr));
+  gap: 2.4rem;
+}
+.pricing .pricing-grid .table {
+  background: var(--white-color);
+  border: 0.1rem solid var(--gray-10);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.pricing .pricing-grid .table::before {
+  content: "";
+  position: absolute;
+}
+
+.pricing .pricing-grid .table::after {
+  content: "\2038";
+  position: absolute;
+}
+
+.pricing-grid .table .heading {
+  padding: 1.2rem 1.2rem 0.4rem;
+  background: var(--table-heading-color);
+
+  & h4,
+  p {
+    color: var(--white-color);
+  }
+}
+
+.pricing-grid .table .data {
+  flex-grow: 1;
+  height: 38rem;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.pricing-grid .table .data .row {
+  border-bottom: 0.1rem solid var(--gray-10);
+  display: flex;
+  align-items: center;
+  margin: 1.2rem;
+  padding-bottom: 1.2rem;
+  gap: 1.2rem;
+
+  & p {
+    color: var(--dark-color);
+  }
+
+  & .image {
+    width: 8.5rem;
+    height: 5rem;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  & .text {
+    flex: 1 0 0;
+    & p {
+      font-weight: 600;
+      font-size: 1.3rem;
+      text-align: start;
+    }
+  }
+
+  & .price p {
+    font-size: 1.3rem;
+    color: var(--gray-100);
+  }
+}
+
+.pricing-grid .table .total {
+  display: flex;
+  justify-content: end;
+  gap: 0.4rem;
+  padding: 1.6rem;
+
+  & h5 {
+    color: var(--dark-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  & p {
+    color: var(--dark-color);
+    text-decoration: line-through;
+  }
+}
+
+.pricing .pricing-grid .table:hover {
+  box-shadow: 0.9rem 0.9rem 1.1rem var(--gray-10);
+}
+
+
+
+

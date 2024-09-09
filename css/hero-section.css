@@ -1,0 +1,278 @@
+.hero-section {
+  background: linear-gradient(#042d8982, #042d8982),
+    url("../images/woman-financial-analyst-working-computer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 170% 160%;
+  /*height: 110vh;
+  */
+  /* padding: 0 4.2rem; */
+}
+.hero-section nav .navbar {
+  justify-content: space-between;
+}
+.hero-section .logo {
+  width: 17rem;
+  height: 6.2rem;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+
+  & .blue-logo {
+    display: none;
+  }
+}
+.hero-section nav ul {
+  gap: 2.8rem;
+  position: relative;
+}
+nav ul li a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-bottom: 0.3rem solid var(--blue-100);
+    width: 0%;
+    margin-top: 3.2rem;
+  }
+
+  &:hover {
+    color: var(--link-hover-color);
+  }
+
+  &:focus::before {
+    width: 100%;
+  }
+
+  &:active::before {
+    width: 100%;
+  }
+}
+.hero-section .container .btns {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  & .line-border {
+    height: 2.4rem;
+  }
+
+  & .fa-regular {
+    font-size: 2.4rem;
+  }
+
+  & .fa-solid {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+}
+.heart-hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+
+  &:hover {
+    background-color: var(--heart-hover-color);
+  }
+}
+
+.search-anim {
+  border: 0.3rem solid var(--white-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.58rem;
+  height: 3.48rem;
+  background: var(--search-anim);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+}
+
+.search-anim:hover {
+  background-position: left bottom;
+}
+
+.navbar .menu-btn .fa-bars {
+  font-size: 2rem;
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+
+  display: none;
+
+  &:hover {
+    color: var(--blue-100);
+  }
+}
+
+.hero-section .body {
+  & .container {
+    flex-direction: column;
+    gap: 3.6rem;
+    padding: 3.4rem 0;
+    text-align: center;
+
+    & .text-1 {
+      margin-top: 8.8rem;
+      position: relative;
+      & span {
+        position: absolute;
+        font-size: 5.1rem;
+        margin-left: 6rem;
+        color: var(--link-hover-color);
+        font-weight: 800;
+        text-transform: capitalize;
+
+        top: 4.4rem;
+        left: 35rem;
+      }
+      & .not-typed {
+        text-align: start;
+        margin-left: 7.2rem;
+      }
+    }
+
+    & .text-2 span {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.2rem;
+    }
+
+    & .input-box {
+      display: flex;
+      align-items: center;
+      padding: 0 2rem;
+
+      gap: 1.6rem;
+      width: 44rem;
+      background-color: var(--white-color);
+      border-radius: 0.8rem;
+      -webkit-border-radius: 0.8rem;
+      -moz-border-radius: 0.8rem;
+      -ms-border-radius: 0.8rem;
+      -o-border-radius: 0.8rem;
+      overflow: hidden;
+
+      & input {
+        outline: none;
+        height: 6rem;
+        flex: 1 0 0;
+        border: none;
+        font-size: 1.6rem;
+        font-family: "Montserrat", sans-serif;
+        color: var(--gray-100);
+      }
+
+      & div {
+        & .fa-magnifying-glass {
+          color: var(--gray-100);
+          border: none;
+          font-size: 1.6rem;
+          cursor: pointer;
+
+          &:hover {
+            color: var(--black-color);
+          }
+        }
+      }
+    }
+
+    & .text-3 {
+      display: flex;
+      gap: 0.8rem;
+
+      & :is(p, span) {
+        font-family: "Roboto", sans-serif;
+        font-size: 2rem;
+      }
+    }
+
+    & .ezi-links {
+      margin-top: -3.6rem;
+    }
+
+    & .ezi-links ul {
+      align-items: center;
+      gap: 0;
+
+      & .eziblogs img {
+        width: 20.6rem;
+        height: 4.7rem;
+      }
+
+      & .ezipos img {
+        width: 16.3rem;
+        height: 3.5rem;
+        margin-left: 2.2rem;
+      }
+
+      & .ezicoding img {
+        width: 28.5rem;
+        height: 13.9rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+.text-1 {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+}
+
+.text-1.fade-out {
+  opacity: 0;
+}
+
+#changing-text {
+  /* display: inline-block; */
+  /* overflow: hidden; */
+  /* border-right: 0.15em solid black; */
+  /* white-space: nowrap; */
+  animation: typing 2s steps(30, end), blink 0.7s step-end infinite;
+  -webkit-animation: typing 2s steps(30, end), blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

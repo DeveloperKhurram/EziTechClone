@@ -1,0 +1,96 @@
+.learning {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin: 5.6rem 10% 3.2rem;
+}
+
+.learning .parallax-image {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  display: block;
+}
+
+.learning .parallax-image .mobile-image {
+  height: clamp(28.3rem, 45vw, 60rem);
+  width: clamp(18.2rem, 32vw, 46rem);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: start;
+  padding-top: 3.2rem;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  width: 100%;
+}
+
+.learning .parallax-image .mobile-image img {
+  height: 115%;
+  transition: transform 0.2s ease-out;
+  -webkit-transition: transform 0.2s ease-out;
+  -moz-transition: transform 0.2s ease-out;
+  -ms-transition: transform 0.2s ease-out;
+  -o-transition: transform 0.2s ease-out;
+}
+
+.learning .parallax-image .before-circle {
+  position: absolute;
+  background: #2e55b0;
+  width: clamp(17.8rem, 25vw, 45rem);
+  height: clamp(17.8rem, 25vw, 45rem);
+  z-index: -1;
+  top: 10%;
+  left: 15%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: transform 0.2s ease-out;
+  -webkit-transition: transform 0.2s ease-out;
+  -moz-transition: transform 0.2s ease-out;
+  -ms-transition: transform 0.2s ease-out;
+  -o-transition: transform 0.2s ease-out;
+}
+
+.learning .text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.learning .text h2 {
+  font-weight: 700;
+  text-align: start;
+  font-size: clamp(2.1rem, 3vw, 4.5rem);
+  color: var(--dark-color);
+  & span {
+    font-size: clamp(2.1rem, 3vw, 4.5rem);
+    font-weight: 700;
+    color: var(--blue-90);
+  }
+}
+
+.learning .text p {
+  color: var(--dark-color);
+  margin: 2.4rem 0;
+  font-size: clamp(1rem, 1.2vw, 1.6rem);
+}
+
+.learning .text .mobile-app-links {
+  display: flex;
+  gap: 3.2rem;
+
+  & .ios-link,
+  .android-link {
+    width: clamp(7.2rem, 10vw, 16.7rem);
+    height: 2.2rem 3vw, 5rem;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
